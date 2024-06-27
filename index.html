@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoring Class Record</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+    <div class="container">
+        <h1>Tutoring Class Record</h1>
+        <label for="department">Department:</label>
+        <select id="department">
+            <option value="Chinese">Chinese</option>
+            <option value="Biology">Biology</option>
+        </select>
+        <label for="other_department">Or Enter:</label>
+        <input type="text" id="other_department" placeholder="Enter department">
+        <button onclick="recordTime()">Record Time</button>
+        <button onclick="clearRecords()">Clear Records</button>
+        <h2>Recorded Sessions:</h2>
+        <textarea id="records_display" readonly></textarea>
+        <h2>Session Counts:</h2>
+        <textarea id="count_display" readonly></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
